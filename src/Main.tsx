@@ -16,10 +16,7 @@ const Main: React.FC = () => {
   };
 
   const handleSubmit = (e: FormEvent) => {
-    console.log('here');
     e.preventDefault();
-
-    console.log(firstName, lastName);
 
     updateStore({ firstName, lastName });
   };
