@@ -26,7 +26,7 @@ const useStore = () => {
   return store;
 };
 
-// Create a context for the store updater function
+// Create a context to deliver the store updater function
 const UpdateContext = React.createContext<
   (partialStore: Partial<Store>) => void
 >(() => {
